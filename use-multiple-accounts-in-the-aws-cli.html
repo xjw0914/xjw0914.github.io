@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>Use Multiple Accounts in the AWS CLI</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="../theme/css/pure-min.css" />
+        <link rel="stylesheet" href="../theme/css/main.min.css" />
+        <link rel="stylesheet" href="../theme/css/grids-responsive-min.css" />
+        <link rel="stylesheet" href="../theme/font-awesome-4.7.0/css/font-awesome.min.css" />
+        <style type="text/css">.react-spinner{position:relative;width:32px;height:32px;top:50%;left:50%}.react-spinner_bar{-webkit-animation:react-spinner_spin 1.2s linear infinite;animation:react-spinner_spin 1.2s linear infinite;border-radius:5px;background-color:#fff;position:absolute;width:20%;height:7.8%;top:-3.9%;left:-10%}@keyframes react-spinner_spin{0%{opacity:1}to{opacity:.15}}@-webkit-keyframes react-spinner_spin{0%{opacity:1}to{opacity:.15}}</style>
+        <script src="../theme/js/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+    <header class="nav-down">
+    <div class="pure-menu pure-menu-horizontal pure-menu-scrollable pure-g">
+      <div class="pure-u-1 pure-u-lg-8-8">
+        <a href="./" class="pure-menu-heading  pure-menu-link" style="font-size:150%">GaLaXY</a>
+            <a title="twitter" href="https://twitter.com/xjw_ipor" class="pure-menu-heading  pure-menu-link" style="font-size:150%"><i class="fa fa-twitter fa-1x"></i></a>
+            <a title="github" href="https://github.com/xjw0914" class="pure-menu-heading  pure-menu-link" style="font-size:150%"><i class="fa fa-github fa-1x"></i></a>
+            <a title="steam" href="https://steamcommunity.com/profiles/76561198096425325/" class="pure-menu-heading  pure-menu-link" style="font-size:150%"><i class="fa fa-steam fa-1x"></i></a>
+        <br>
+        <ul class="pure-menu-list">
+            <li class="pure-menu-item"><a href="../archives.html" class="pure-menu-link">ALL POSTS</a></li>
+            <li class="pure-menu-item"><a href="../categories.html" class="pure-menu-link">CATEGORIES</a></li>
+            <li class="pure-menu-item"><a href="../tags.html" class="pure-menu-link">TAGS</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+
+<div class="page-container">
+    <div class="entry-content">
+      <div class="post-meta pure-u-10-24">
+          <div class="pure-u">
+              <img src="../theme/images/authors/johndoe.png" class="post-avatar" alt="Go to the profile of JW0nd3r_">
+          </div>
+          <div class="pure-u meta-data">
+              <a href="https://xjw0914.github.io/author/jw0nd3r_.html" class="category">JW0nd3r_</a><br />
+              
+            Data Analyst at John Doe LLC.
+        <br />
+              <abbr title="2017-06-09T15:20:00+08:00">Fri 09 June 2017</abbr>
+          </div>
+      </div>
+    </div>
+
+    <div class="article-header-container">
+        <div class="background-image-container">
+
+            <div class="background-image-small">
+                <div class="title-container">
+                    <h1>Use Multiple Accounts in the AWS CLI</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="entry-content">
+        <!--
+        <div align="right">
+          Author:<br>
+              <a href="https://xjw0914.github.io/author/jw0nd3r_.html">JW0nd3r_</a><br>
+        </div>
+        -->
+
+        <h2>配置多个Profile</h2>
+<div class="highlight"><pre><span></span>aws configure --profile YOUR_PROFILE
+</pre></div>
+
+
+<h2>选择某个特定的Profile</h2>
+<div class="highlight"><pre><span></span>aws --profile YOUR_PROFILE s3 ls
+</pre></div>
+
+
+<h2>saws进入某个特定的Profile</h2>
+<div class="highlight"><pre><span></span><span class="nv">AWS_DEFAULT_PROFILE</span><span class="o">=</span>YOUR_PROFILE saws
+</pre></div>
+    </div>
+
+    <footer>
+        <div class="tags">
+            <a href="https://xjw0914.github.io/tag/aws.html">aws</a>
+            <a href="https://xjw0914.github.io/tag/cli.html">cli</a>
+        </div>
+        <div class="pure-g post-footer">
+            <div class="pure-g">
+                <div class="pure-g poster-info">
+                    <div class="pure-u">
+                        <a href="https://xjw0914.github.io/author/jw0nd3r_.html"><img src="../theme/images/authors/johndoe.png" alt=""></a>
+                    </div>
+                    <div class="pure-u">
+                        <h3 class="author-name"><a href="https://xjw0914.github.io/author/jw0nd3r_.html">JW0nd3r_</a></h3>
+                        <p class="author-description">
+                          
+            Hey! It's me~
+        
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--
+            -->
+
+        </div>
+
+
+    </footer>
+
+    <div class="entry-content">
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+            var disqus_shortname = 'GaLaXY-Github-Pages';
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+    </div>
+
+</div>
+
+</body>
+
+<script type="text/javascript">
+// Hide Header on on scroll down
+var didScroll;
+var lastScrollTop = 0;
+var delta = 5;
+var navbarHeight = $('header').outerHeight();
+
+$(window).scroll(function(event){
+    didScroll = true;
+});
+
+setInterval(function() {
+    if (didScroll) {
+        hasScrolled();
+        didScroll = false;
+    }
+}, 250);
+
+function hasScrolled() {
+    var st = $(this).scrollTop();
+
+    // Make sure they scroll more than delta
+    if(Math.abs(lastScrollTop - st) <= delta)
+        return;
+
+    // If they scrolled down and are past the navbar, add class .nav-up.
+    // This is necessary so you never see what is "behind" the navbar.
+    if (st > lastScrollTop && st > navbarHeight){
+        // Scroll Down
+        $('header').removeClass('nav-down').addClass('nav-up');
+    } else {
+        // Scroll Up
+        if(st + $(window).height() < $(document).height()) {
+            $('header').removeClass('nav-up').addClass('nav-down');
+        }
+    }
+
+    lastScrollTop = st;
+}
+</script>
+
+</html>
